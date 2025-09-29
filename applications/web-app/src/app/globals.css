@@ -1,2 +1,24 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
+@theme {
+  /* Black */
+  --color-black-primary: #000000;
+  --color-black-600: #403d39;
+
+  /* White */
+  --color-white-primary: #e7e9ea;
+
+  /* Gray */
+  --color-gray-900: #2f3336;
+}
+
+@layer base {
+  h1,
+  h2 {
+    @apply text-white-primary font-bold;
+  }
+
+  h2 {
+    @apply text-white-primary text-2xl md:text-3xl;
+  }
+}
