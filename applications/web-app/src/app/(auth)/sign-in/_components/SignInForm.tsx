@@ -1,7 +1,10 @@
+'use client';
+
 import { Button } from '@/components/Button';
 import { Devider } from '@/components/Devider';
 
 import { IconApple } from '@/components/icons/Apple';
+import { TermsAndConditions } from './TermsAndConditions';
 
 // TODO: Split methods up in differnt components to handle logic separately
 export const SignInForm = () => {
@@ -20,6 +23,8 @@ export const SignInForm = () => {
 
         <Button className="py-3">Account aanmaken</Button>
       </div>
+
+      <TermsAndConditions />
     </div>
   );
 };
